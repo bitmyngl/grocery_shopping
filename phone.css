@@ -1,0 +1,147 @@
+/* navigation section */
+#navbar{
+    flex-direction: column;
+    height: 120px;
+}
+#navbar ul{
+    margin-left: 8px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+}
+
+#navbar ul li a{
+    font-size: 0.7em;
+    padding: 2px;
+    border-radius: 6px;
+}
+#navbar ul li a:hover{
+    text-decoration: none;
+    display: block;
+    margin: 0px 4px;
+    color: black;
+    background-color: white;
+    font-size: 0.7em;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+
+/* home section */
+#home{
+    height: 330px; 
+    padding-left:50px ;
+    padding-right: 50px;
+}
+
+#home::before{
+    height: 480px;
+    width: 100%;
+}
+#home p{
+    font-size: 0.8rem;
+}
+
+
+/* services section */
+#services{
+    flex-direction: column;
+    margin:auto;
+}
+
+.services-container{
+    margin:1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+#services .box{
+    margin-top:0px;
+    margin-bottom:20px;
+    margin-left:0px;
+    margin-right:0px;
+
+}
+
+
+/* client or top brand section */
+.clients{
+    /* flex-direction: column; */
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+.clients img{
+    width: auto;
+    height: auto;
+    margin: auto;
+    border-radius: 12px;
+}
+
+
+/* type section */
+.type{
+    flex-wrap: wrap;
+}
+.type .item-items{
+    width: auto;
+    height: auto;
+    margin: 5px auto;
+}
+
+.type .item-items .description {
+    background-color: rgb(244, 242, 242);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 5px;
+    height: 70px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.type .item-items .description:hover {
+    background-color: rgb(244, 242, 242);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0px;
+    height: 110px; /* Increase the height to extend the box upward */
+    transform: translateY(-35px); /* Use a negative value to extend the box upward */
+    margin-bottom: -40px; /* Adjust margin to compensate for the height change */
+}
+.type .item-items .description .hidden{
+    display: flex;
+    margin-top:35px ;
+}
+
+
+/* contact us section */
+#contact-box form{
+    width: 60%;
+}
+
+
+/* footer */
+
+
+
+.h-primary{
+    font-size: 1.5rem;
+    padding: 8px 0px;
+}
+.h-secendary{
+    font-size: 0.5rem;
+    padding: 8px 0px;
+}
+#btn{
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}
+#btn:hover{
+    font-family: 'Bree Serif', serif;
+    margin: 17px 0px;
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: gray;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}

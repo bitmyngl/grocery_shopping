@@ -1,0 +1,385 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 50px;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: sticky;
+    top: 0px;
+    height: 80px;
+
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+}
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    margin: 0px 20px;
+    /* padding: 10px 10px; */
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+}
+
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+    margin: 0px 4px;
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+}
+
+#navbar ul li a:hover{
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+    margin: 0px 4px;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* HOME section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 490px;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+#home::before{
+    content: "";
+    background: url(../pics/bg22.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    position: absolute;
+    top: 0px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size:1.1rem ;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Services Center */
+#services{
+    display: flex;
+    margin: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.services-container{
+    font-family: 'Bree Serif', serif;
+}
+#services .box{
+    /* border: 2px solid red; */
+    padding: 20px 20px;
+    margin: 0px 8px;
+    border-radius: 18px;
+    background-color: #f4ecec;
+}
+#services .box img{
+    height: 110px;
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+}
+#services .box h2{
+    padding-top: 17px;
+}
+
+
+
+/* top brand section */
+.client-section{
+
+}
+.clients{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.client-items{
+    padding: 12px;
+    /* margin: 0px; */
+    /* border-radius: 0px; */
+}
+.client-items:hover{
+    /* padding: 12px; */
+    /* margin: 0px; */
+    /* border-radius: 0px; */
+    /* width: 95%; */
+    transform: scale(1.05);
+}
+.client-items img{
+
+}
+
+
+
+/* type section */
+.type{
+    margin: 5px;
+    display: flex;
+}
+.type .item-items{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 0px;
+    border: 1px solid #e0e0e0;
+    border-radius: 24px;
+    margin: 8px;
+}
+.type .item-items:hover{
+    transform: scale(1.05);
+}
+.type .item-items img{
+    height: 210px;
+    width: 235px;
+
+}
+.type .item-items .description {
+    background-color: rgb(244, 242, 242);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 5px;
+    height: 70px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.type .item-items .description:hover {
+    background-color: rgb(244, 242, 242);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0px;
+    height: 105px; /* Increase the height to extend the box upward */
+    transform: translateY(-35px); /* Use a negative value to extend the box upward */
+    margin-bottom: -35px; /* Adjust margin to compensate for the height change */
+}
+
+.type .item-items .description .pname{
+
+}
+.type .item-items .description .price{
+    display: flex;
+    flex-direction: row;
+}
+.type .item-items .description .price .offerprice{
+    font-weight:bolder;
+    padding-left: 5px;
+    font-size: 19px;
+}
+.type .item-items .description .price .actualprice{
+    text-decoration: line-through;
+    padding-left: 5px;
+    font-size: 14px;
+    margin-top: 3.5px;
+}
+.type .item-items .description .price .off{
+    font-weight: bold;
+    background-color: rgb(212, 250, 196);
+    margin-left: 5px;
+    font-size: 15px;
+    margin-top: 1.5px;
+    padding: 2px;
+}
+.type .item-items .description .hidden{
+    display: flex;
+    margin-top:12px ;
+}
+.type .item-items .description .hidden .bank{
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px green;
+    color: rgb(255, 0, 0);
+
+}
+.type .item-items .description .hidden .rating{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    padding-left: 4px;
+    padding-right: 2px;
+    margin-right: 13px;
+    margin-top: 4px;
+}
+.type .item-items .description .hidden .rating div{
+    color: white;
+    font-size: 17px;
+    /* margin-right: 10px; */
+}
+.type .item-items .description .hidden .rating img{
+    height: 13px;
+    width: 13px;
+    margin-top: 3px;
+    margin-left: 2px;
+
+}
+.type .item-items .description .hidden .btn{
+    margin-left: 0px;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 0px;
+    padding-right: 6px;
+    padding-left: 6px;
+    cursor: pointer;
+
+}
+.type .item-items .description .hidden .btn:hover{
+    margin-left: 0px;
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 0px;
+    padding-right: 6px;
+    padding-left: 6px;
+    cursor: pointer;
+    background-color:bisque ;
+    /* color: ; */
+
+}
+.newupdate{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact section */
+#contact{
+    position: relative;
+    font-family: 'Bree Serif', serif;
+}
+#contact:before{
+    content: "";
+    background: url(../pics/contact.webp) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding:0.7rem 1rem;
+    border-radius: 13px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 8px 0px;
+}
+.h-secendary{
+    font-size: 1.5rem;
+    padding: 8px 0px;
+}
+
+#btn{
+    font-family: 'Bree Serif', serif;
+    margin: 17px 0px;
+    padding: 3px 5px;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    background-color: #ffe1e1;
+    color: black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#btn:hover{
+    font-family: 'Bree Serif', serif;
+    margin: 17px 0px;
+    padding: 3px 5px;
+    font-size: 1.3rem;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: gray;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
